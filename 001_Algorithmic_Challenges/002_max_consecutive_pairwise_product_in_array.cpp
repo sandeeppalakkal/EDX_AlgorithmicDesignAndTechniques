@@ -1,12 +1,13 @@
 #include<iostream>
 using namespace std;
 
-int MaxPairwiseProduct(int *array, int n)
+long long int MaxConsecutivePairwiseProduct(int *array, int n)
 {
-    int max_prod = array[0] * array[1];
+    long long int max_prod = array[0] * array[1];
+    cout << max_prod;
     for(int i=2; i < n; ++i)
     {
-        int new_prod = array[i] * array[i-1];
+        long long int new_prod = array[i] * array[i-1];
         max_prod = (max_prod > new_prod) ? max_prod : new_prod;
     }
     return max_prod;
@@ -24,7 +25,7 @@ int main()
     {
         cin >> array[i];
     }
-    int result = MaxPairwiseProduct(array,n);
+    long long int result = MaxConsecutivePairwiseProduct(array,n);
     cout << "Result: ";
     cout << result;
     cout << endl;

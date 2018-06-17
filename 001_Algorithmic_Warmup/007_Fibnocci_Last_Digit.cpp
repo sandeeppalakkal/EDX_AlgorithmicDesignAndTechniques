@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-    unsigned int n, p = 0, q = 1, r = 0;
+    unsigned int n, p = 0, q = 1, r;
     cout << "Enter a positive integer: ";
     cin >> n;
     if(n < 2) r = n;

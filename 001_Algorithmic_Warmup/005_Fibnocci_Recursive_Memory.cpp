@@ -1,6 +1,7 @@
 // Fibnocci number computation using recursion with memoization
 // Sandeep Palakkal
 // sandeep.dion@gmail.com#include <iostream>
+#include <iostream>
 using namespace std;
 
 #define max_int 1000
@@ -12,7 +13,7 @@ unsigned long long Fibnocci(unsigned n, unsigned long long *memory)
     unsigned long long m;
     if (n < 2)
     {
-        m = 1;
+        m = n;
     }
     else
     {

@@ -1,6 +1,7 @@
 // Fibnocci number computation using iterative approach
 // Sandeep Palakkal
 // sandeep.dion@gmail.com#include<iostream>
+#include<iostream>
 using namespace std;
 
 unsigned long long additions = 0;
@@ -8,7 +9,7 @@ unsigned long long additions = 0;
 unsigned long long Fibnocci(unsigned n)
 {
     unsigned long long fib[n+1];
-    fib[0] = 1;
+    fib[0] = 0;
     fib[1] = 1;
     for(int i = 2; i < n+1; ++i)
     {

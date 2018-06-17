@@ -9,7 +9,7 @@ unsigned long long additions = 0;
 unsigned long long Fibnocci(unsigned n)
 {
     unsigned long long m;
-    if(n < 2) m = 1;
+    if(n < 2) m = n;
     else
     {
         m = Fibnocci(n-1) + Fibnocci(n-2);

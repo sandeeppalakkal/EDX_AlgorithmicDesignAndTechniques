@@ -126,6 +126,7 @@ int main()
     }
 
     infile.close();
+    outfile.close();
     delete[] buffer;
     return 0;
 }
